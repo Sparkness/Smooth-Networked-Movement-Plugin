@@ -6,7 +6,7 @@ Works for 5.3 and 5.4
 TODO:
 Bug Fixes
 
-Join our Discord: https://discord.gg/PwGBQBR7MM
+Join my Discord: https://discord.gg/PwGBQBR7MM
 
 # Documentation #
 
