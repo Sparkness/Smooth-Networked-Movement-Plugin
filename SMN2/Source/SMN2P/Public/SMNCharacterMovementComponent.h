@@ -155,47 +155,47 @@ public:
 	template <typename T>
 	FORCEINLINE void AddPredictedProperty(FProperty* Property)
 	{
-		if constexpr (TIsSame<T, bool>::Value)
+		if constexpr (std::is_same<T, bool>::Value)
 		{
 			AddPredictedProperty_Bool(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, int32>::Value)
+		else if constexpr (std::is_same<T, int32>::Value)
 		{
 			AddPredictedProperty_Int32(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, float>::Value)
+		else if constexpr (std::is_same<T, float>::Value)
 		{
 			AddPredictedProperty_Float(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, double>::Value)
+		else if constexpr (std::is_same<T, double>::Value)
 		{
 			AddPredictedProperty_Double(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, FVector>::Value)
+		else if constexpr (std::is_same<T, FVector>::Value)
 		{
 			AddPredictedProperty_Vector(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, FVector2D>::Value)
+		else if constexpr (std::is_same<T, FVector2D>::Value)
 		{
 			AddPredictedProperty_Vector2D(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, FVector4>::Value)
+		else if constexpr (std::is_same<T, FVector4>::Value)
 		{
 			AddPredictedProperty_Vector4(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, FQuat>::Value)
+		else if constexpr (std::is_same<T, FQuat>::Value)
 		{
 			AddPredictedProperty_Quat(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, FRotator>::Value)
+		else if constexpr (std::is_same<T, FRotator>::Value)
 		{
 			AddPredictedProperty_Rotator(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, uint8>::Value)
+		else if constexpr (std::is_same<T, uint8>::Value)
 		{
 			AddPredictedProperty_Byte(Property->GetFName());
 		}
-		else if constexpr (TIsSame<T, FGameplayTag>::Value)
+		else if constexpr (std::is_same<T, FGameplayTag>::Value)
 		{
 			AddPredictedProperty_GameplayTag(Property->GetFName());
 		}
@@ -204,47 +204,47 @@ public:
 	template <typename T>
 	FORCEINLINE void AddPredictedProperty(FName PropertyName)
 	{
-		if constexpr (TIsSame<T, bool>::Value)
+		if constexpr (std::is_same<T, bool>::Value)
 		{
 			AddPredictedProperty_Bool(PropertyName);
 		}
-		else if constexpr (TIsSame<T, int32>::Value)
+		else if constexpr (std::is_same<T, int32>::Value)
 		{
 			AddPredictedProperty_Int32(PropertyName);
 		}
-		else if constexpr (TIsSame<T, float>::Value)
+		else if constexpr (std::is_same<T, float>::Value)
 		{
 			AddPredictedProperty_Float(PropertyName);
 		}
-		else if constexpr (TIsSame<T, double>::Value)
+		else if constexpr (std::is_same<T, double>::Value)
 		{
 			AddPredictedProperty_Double(PropertyName);
 		}
-		else if constexpr (TIsSame<T, FVector>::Value)
+		else if constexpr (std::is_same<T, FVector>::Value)
 		{
 			AddPredictedProperty_Vector(PropertyName);
 		}
-		else if constexpr (TIsSame<T, FVector2D>::Value)
+		else if constexpr (std::is_same<T, FVector2D>::Value)
 		{
 			AddPredictedProperty_Vector2D(PropertyName);
 		}
-		else if constexpr (TIsSame<T, FVector4>::Value)
+		else if constexpr (std::is_same<T, FVector4>::Value)
 		{
 			AddPredictedProperty_Vector4(PropertyName);
 		}
-		else if constexpr (TIsSame<T, FQuat>::Value)
+		else if constexpr (std::is_same<T, FQuat>::Value)
 		{
 			AddPredictedProperty_Quat(PropertyName);
 		}
-		else if constexpr (TIsSame<T, FRotator>::Value)
+		else if constexpr (std::is_same<T, FRotator>::Value)
 		{
 			AddPredictedProperty_Rotator(PropertyName);
 		}
-		else if constexpr (TIsSame<T, uint8>::Value)
+		else if constexpr (std::is_same<T, uint8>::Value)
 		{
 			AddPredictedProperty_Byte(PropertyName);
 		}
-		else if constexpr (TIsSame<T, FGameplayTag>::Value)
+		else if constexpr (std::is_same<T, FGameplayTag>::Value)
 		{
 			AddPredictedProperty_GameplayTag(PropertyName);
 		}
