@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-ifndef likely
+#ifndef likely
 #define likely(x) \
 	(x) [[likely]]
 #endif // likely
